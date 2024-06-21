@@ -1,0 +1,73 @@
+body{
+    background-color: var(--secondarycolor);
+}
+.order_cart {
+    padding-top: 100px;
+    padding-left: 20px;
+    height: 100vh;
+}
+
+table {
+    border-collapse: collapse;
+    border-radius: 6px;
+    width: 60%;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid rgb(197, 194, 194);
+    border-left-color: 1px solid rgb(255, 253, 253) ;
+    border-right-color: 1px solid rgb(255, 253, 253) ;
+}
+
+th {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    padding: 12px;
+    border-top-color: #fff;
+}
+
+td {
+    padding: 8px;
+}
+
+th,
+td {
+    border-right-color: #fff;
+}
+
+th:last-child,
+td:last-child {
+    border: 1px solid rgb(180, 179, 179);
+}
+
+.th_main {
+    padding: 15px 70px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: lighter;
+}
+tr{
+    border-radius: 20%;
+}
+/* view_cart.php CSS */
+.box{
+    background-color: var(--primarycolor);
+border-radius: 10px;
+margin: 50px auto;
+padding: 20px;
+width: 400px;
+box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+
+}
+hr{
+    margin: 10px 0;
+}
+.btn a{
+    background-color: var(--maincolor);
+    color: var(--primarycolor);
+    font-size: 18px;
+    border: 1px solid;
+    text-decoration: none;
+    padding: 5px 15px;
+}
+.btn i{
+    margin: 10px auto;
+}

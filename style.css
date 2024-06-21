@@ -1,0 +1,698 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    /* background-color: var(--darkcolor);
+    color: #fff; */
+}
+
+:root {
+    --maincolor: red;
+    --primarycolor: #fff;
+    --secondarycolor: #f0eff5;
+    --darkcolor: black;
+    --hovercolor:#ff6666;
+    --shadowcolor:0 0 10px rgba(0,0,0,0.2);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+/* NAV BAR */
+.logo img {
+    height: 80px;
+    margin-top: -12px;
+    margin-left: 10px;
+}
+
+.navbar {
+    display: flex;
+    box-shadow: 2px 2px 10px rgb(224, 227, 233);
+    height: 55px;
+    width: 1535px;
+    /* backdrop-filter: blur(8px); */
+    background-color: var(--primarycolor);
+    z-index: 1;
+    position: fixed;
+}
+
+ul li {
+    list-style: none;
+    border-radius: 4px;
+    margin: 10px 10px;
+    padding: 7px 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: var(--darkcolor);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    padding: 0px 0;
+}
+
+.list1 ul {
+    display: flex;
+    margin-left: 250px;
+}
+.list1 ul li:hover {
+    background-color: var(--maincolor);
+    color: var(--primarycolor);
+    /* transition: 0.2s; */
+}
+.list1 ul li a{
+    display: block;
+    color: inherit;
+}
+.list2 ul {
+    display: flex;
+    margin-left: 200px;
+}
+
+.list2 ul li {
+    background-color: var(--maincolor);
+}
+
+.list2 ul li a {
+    color: var(--primarycolor);
+}
+
+.list2 ul li:hover {
+    background-color: var(--darkcolor);
+}
+
+.list2 ul li span {
+    color: var(--primarycolor);
+
+}
+/* NAVBAR.PHP  */
+.user_nav img {
+    border-radius: 50%;
+    height: 20px;
+    width: 20px;
+    margin-right: 10px;
+}
+
+.user_nav {
+    color: var(--primarycolor);
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    height: 25px;
+}
+.list2 p{
+    cursor: pointer;
+}
+.list3 ul {
+    background-color: var(--primarycolor);
+    margin: 63px 100px 0 -262px;
+    box-shadow: var(--shadowcolor);
+    width: 237px;
+    position: absolute;
+    text-align: center;
+}
+
+.list3 ul li:hover {
+    background-color: var(--maincolor);
+    color: var(--primarycolor);
+}
+
+.list3 ul li a {
+    display: block; /* It makes the whole area clickable */
+    color: inherit; /* Inherit color from Parent */
+}
+
+.nav-icon {
+    margin-top: 13px;
+    margin-left: 15px;
+    font-size: 25px;
+}
+
+.nav-icon #bars {
+    display: none;
+}
+
+/* HOME */
+.home {
+    display: flex;
+}
+
+.homepic img {
+    height: 102vh;
+    margin-top: -2%;
+}
+
+.home .content {
+    margin: 9% 0 0 4%;
+    width: 40%;
+}
+
+.home .content h1 {
+    font-size: 7vh;
+}
+
+.home .content p {
+    font-size: 2.2vh;
+    margin-top: 30px;
+}
+
+.tick {
+    margin-top: 35px;
+}
+
+.tickin {
+    margin-top: 10px;
+}
+
+.tick i {
+    font-size: 23px;
+    color: var(--maincolor);
+}
+
+.tick span {
+    font-size: 17px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+#orderbtn {
+    padding: 10% 2%;
+}
+
+#orderbtn a {
+    text-decoration: none;
+    border-radius: 4px;
+    background-color: var(--maincolor);
+    color: var(--primarycolor);
+    padding: 3% 9%;
+    font-size: 18px;
+}
+
+#orderbtn :hover {
+    background-color: var(--darkcolor);
+}
+
+/* ABOUT */
+.about {
+    height: 100vh;
+    background-color:var(--secondarycolor);
+    /* box-shadow: 1px 1px 10px 7px rgb(187, 181, 181);  */
+}
+
+h2 {
+    font-size: 40px;
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+    color: var(--maincolor);
+    padding-top: 7vh;
+}
+
+.aboutheader h1,
+.product-header h1,
+.review h1,
+.reserve-header h1 {
+    text-align: center;
+    font-size: 40px;
+    font-family: "Sofia", sans-serif;
+}
+
+.underlineimg img {
+    height: 10px;
+    width: 40%;
+    margin-left: 30%;
+}
+
+.aboutin {
+    display: flex;
+    width: 100%;
+    margin-left: 0%;
+    margin-top: 20px;
+    box-shadow: 1px 1px 10px 7px rgb(187, 181, 181);
+}
+
+.aboutin .img img {
+    height: 60vh;
+}
+
+.aboutin .content {
+    margin: 1% 10%;
+}
+
+.aboutin .content h1 {
+
+    margin-bottom: 30px;
+}
+
+.aboutin .content p {
+    margin-top: 10px;
+    line-height: 30px;
+}
+
+.ftbtn {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.ftbtn i {
+    color: gold;
+    font-size: 22px;
+}
+
+.ftbtn a,
+.showbtn a {
+    text-decoration: none;
+    color: var(--primarycolor);
+}
+
+.ftbtnin {
+    border-radius: 4px;
+    padding: 12px 20px;
+    background-color: var(--darkcolor);
+}
+.ftbtnin a{
+    cursor: not-allowed;
+}
+.ftbtnin:hover {
+    background-color: var(--maincolor);
+}
+
+/* MENU */
+.product-btn {
+    margin: 5px 35%;
+    background-color: var(--secondarycolor);
+    height: 5%;
+    width: 25%;
+    padding: 14px 25px;
+    border-radius: 4px;
+}
+
+.product-btn button {
+    height: 50px;
+    width: 120px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 2px;
+}
+
+.food-container {
+    display: none;
+}
+.foodin{
+    overflow: hidden;
+}
+.foodin img {
+    height: 210px;
+    width: 320px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.foodin img:hover {
+    transform: scale(1.1);
+}
+
+.foodin .content {
+    font-family: Arial, sans-serif;
+    margin-top: 9px;
+}
+
+.content h5 {
+    color: grey;
+    font-weight: 500;
+    margin: 6px 0;
+}
+
+.content h4 {
+    font-size: medium;
+    font-weight: 100;
+}
+
+.content p {
+    color: rgb(74, 74, 74);
+    margin-top: 6px;
+    font-size: 14px;
+}
+
+.foodin {
+    margin-bottom: 1%;
+}
+
+.food-list {
+    display: flex;
+    justify-content: space-around;
+}
+
+.showbtn {
+    text-align: center;
+    margin: 1% 0;
+}
+
+.showbtn a {
+    background-color: var(--maincolor);
+    font-size: 17px;
+    padding: 1% 2%;
+    border-radius: 4px;
+}
+.showbtn a:hover{
+    background-color: var(--darkcolor);
+}
+
+/* TEAM */
+.team {
+    height: 100vh;
+    background-color: var(--secondarycolor);
+    margin-top: 70px;
+}
+
+.teamin {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+/* IMAGE WILL ZOom inside container when team-member comment out then it zoom outsude container or on screen */
+.team-member{
+    overflow: hidden;
+}
+
+.team-member img {
+    height: 55vh;
+    width: 42vh;
+    transition: 0.3s;
+}
+.team-member img:hover {
+    /* filter: blur(3px);  */
+    transform: scale(1.1);
+}
+
+.team-member .content {
+    text-align: center;
+    margin-top: 19px;
+}
+
+.team-member .content p,
+.t-icon {
+    margin-top: 8px;
+}
+
+.team-member .content h4 {
+    font-size: 19px;
+}
+
+.team-member .content h5 {
+    font-size: 14px;
+}
+
+/* REVIEW */
+.review {
+    height: 97vh;
+}
+
+.review-member img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 10px 10px;
+    transition: 0.6s;
+}
+
+.r-name {
+    margin: 20px 0 0 22px;
+}
+
+.r-name p {
+    font-size: 500;
+    color: grey;
+    font-size: 13px;
+}
+
+.reviewin {
+    height: 160px;
+    width: 450px;
+    /* box-shadow: 15px 2px 5px whitesmoke; */
+    box-shadow: 15px 2px 5px rgb(227, 30, 30);
+    font-size: 14px;
+    transition: 0.6s;
+}
+
+/* only box will zoom */
+.reviewin:hover {
+    transform: scale(1.1);
+}
+
+.review-member img:hover {
+    transform: scale(2.1);
+}
+
+/* both box with img will zoom */
+/* .reviewin:hover .review-member img {
+    transform: scale(2.1);
+} */
+
+.review-member {
+    display: flex;
+}
+
+.r-icon {
+    margin: 30px 0 0 100px;
+    color: var(--maincolor);
+}
+
+.r-comment p {
+    color: rgb(71, 71, 71);
+    /* margin-top: 15px; */
+    margin-left: 10px;
+}
+
+.rmberflex,
+.rmberflex2 {
+    display: flex;
+    margin: 4% 15%;
+    justify-content: space-around;
+}
+
+.rmberflex2 {
+    margin-top: -16%;
+}
+
+/* FOOTER */
+.footer-in {
+    height: 48vh;
+    margin-top: 2%;
+    background-color: var(--secondarycolor);
+}
+
+.footer-flex {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer h2 {
+    text-align: left;
+    font-size: 32px;
+    /* margin-top: -20%; */
+}
+
+
+.location ul li,
+.Quick-Links ul li,
+.contact-info ul li,
+.follow ul li {
+    margin: 4px 0;
+    padding: 2px 0;
+}
+
+.location ul li a,
+.Quick-Links ul li a,
+.contact-info ul li a,
+.follow ul li a {
+    font-size: 16px;
+}
+
+.copyright {
+    border-top: 1px solid;
+    margin: 0 7%;
+    margin-top: 2%;
+}
+
+.copyright p {
+    margin-top: 17px;
+}
+
+
+/* RESPONSIVE MEDIA QUERY */
+@media screen and (min-width:320px) and (max-width:767px) {
+/* Navbar */
+
+.logo img {
+    height: 70px;
+    margin: -5px 0 0 8px;
+}
+.list2 ul {
+    display: none;
+    margin-left: 0px;
+}
+.nav-icon a{
+    display: none;
+}
+.nav-icon #bars{
+    display: block;
+    margin-left: 20vh;
+    cursor: pointer;
+}
+.list1 ul{
+    flex-direction: column;
+    margin:60px 0;
+    background-color: rgba(13, 3, 3, 0.9);
+    padding: 0 55px 0 ;
+    position: absolute;
+}
+.list1 ul li a{
+    color: var(--primarycolor);
+}
+.list1{
+    display: none;
+}
+.show-list{
+    display: block;
+    
+}
+
+    /* HOME */
+    .home {
+        display: grid;
+    }
+    .homepic img {
+        height: 55vh;
+        margin: 6% 0 0 -10%;
+    }
+
+    .home .content h1 {
+        font-size: 30px;
+    }
+
+    .home .content {
+        margin-left: 2%;
+        width: 80%;
+    }
+
+    h2 {
+        padding: 0;
+    }
+/* About */
+    .aboutheader h1,
+    .product-header h1,
+    .review h1 {
+        font-size: 1rem;
+    }
+    .about{
+        height: auto;
+    }
+    .aboutin{
+        display: grid;
+        margin-top: 10px;
+        box-shadow: 0 0 0 0;
+    }
+    .aboutin .img img {
+        height: 32vh;
+        width: 100%;
+    }
+    .aboutin .content {
+        margin: 2% 10%;
+    }
+    .aboutin .content h1 {
+        margin: 10px 0 0 0;
+    }
+    
+    .aboutin .content p {
+        line-height: 30px;
+    }
+    .ftbtn {
+        display: grid;
+        margin-top: 10px;
+    }
+    .ftbtn i {
+        font-size: 20px;
+    } /* cut later check */
+    .ftbtnin {
+        padding: 10px 20px;
+        margin-top: 10px;
+    }
+    /* Menu */
+    .product-btn {
+        margin-left: 0;
+    }
+    .product-btn button {
+        height: 40px;
+        width: 120px;
+        font-size: 14px;
+        cursor: pointer;
+        margin-left: 5%;
+    }
+    .food-list {
+        display: grid;
+    }
+    .foodin {
+        margin-bottom: 4%;
+    }
+   .foodin .content {
+    margin-top: 0px;
+    }
+    .showbtn a {
+        font-size: 17px;
+        padding: 3% 5%;
+    }
+    /* TEAM */
+    .team {
+        height: auto;
+    }
+    .teamin {
+        display: grid;
+        margin: 20px 15%;
+    }
+    .team-member{
+        margin-bottom: 15px;
+    }
+    .team h2{
+        font-size: 25px;
+    }
+    /* Testimonal/ Review */
+    /* .review h2{
+        margin-top: 0px;
+    } */
+    .review h1{
+        font-size: 30px;
+    }
+    .reviewin:hover {
+        transform: none;
+    }
+    .reviewin {
+        width: auto;
+        box-shadow: none;
+    }
+    .review-member img:hover {
+        transform: none;
+    }
+    .rmberflex,
+.rmberflex2 {
+    display: grid;
+    margin: 1% 0%;
+}
+.rmberflex2{
+    margin-top: -80%;
+}
+/* Footer */
+footer h2 {
+    font-size: 30px;
+}
+
+.footer-in {
+    height: 110vh;
+}
+.footer-flex {
+    display: inline-block;
+    margin-left: 10%;
+}
+}

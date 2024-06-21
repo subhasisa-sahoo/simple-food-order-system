@@ -1,0 +1,122 @@
+
+/* Conatct */
+.form-head h2{
+    font-size: 40px;
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+    color: var(--maincolor);
+    padding: 70px 0 0 0;
+}
+.form-head p{
+    text-align: center;
+    padding: 0 9%;
+    margin-top: 10px;
+}
+.underlineimg img {
+    height: 10px;
+    width: 40%;
+    margin-left: 30%;
+}
+.form-all{
+    margin: 4rem 27rem ;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: rgb(89, 87, 87);
+    height: 20vh;
+    
+}
+.form-flex{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+input{
+    margin-bottom: 20px;
+}
+.f-name input,
+.f-email input,
+.f-msg input{
+    margin-top: 3px;
+    border-radius: 4px;
+    background-color: #f5f5f7; 
+    border: 1px solid #ccc;
+    font-size: 16px;
+    padding-left: 10px;
+}
+.f-name input,
+.f-email input{
+    height: 32px;
+    width: 20vw;
+}
+.f-msg input{
+    height: 120px;
+    width: 100%;
+}
+/* .f-name input:focus,
+.f-email input:focus,
+.f-msg input:focus{
+    border-color: #4f46e5;
+} */
+.f-btn{
+    text-align: center;
+    
+}
+.f-btn input{
+    font-size: 16px;
+    padding: 10px 15px;
+    background-color: var(--maincolor);
+    color: var(--primarycolor);
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.box{
+    /* box-shadow:  15px 2px 5px rgb(227, 30, 30); */
+    box-shadow:  0 0 3px 2px rgb(227, 30, 30);
+    border-radius: 4px;
+    height: 120px;
+    margin: 10rem 23rem ;
+    font-family: Arial, sans-serif;
+}
+.boxin{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 4%;
+}
+.box p{
+    font-size: 14px;
+    margin-bottom: 6px;
+}
+.box span{
+    font-size: 14px;
+    color: rgb(80, 79, 79);
+    font-weight: 500;
+
+}
+.email span{
+    color: #4f46e5;
+}
+
+@media screen and (max-width:767px)
+{
+    p{
+        padding: 0 0;
+    }
+    .form-all{
+        margin: 2rem 2rem ;
+        
+    }
+    .form-flex{
+        flex-direction: column;
+        
+    }
+    .f-name input,
+.f-email input{
+    width: 100%;
+}
+.boxin{
+    padding: 0;
+}
+}

@@ -1,0 +1,29 @@
+/* PROFILE PAGE [profile.php] */
+.pro_img img{
+    height: 150px;
+    width: 150px;
+    margin: 10% 23% 5%;
+}
+.details{
+    padding: 2px 20px;
+    margin-top: 10px;
+    justify-content: space-between;
+    display: flex;
+    border-bottom: 1px solid rgb(186, 186, 183) ;
+}
+.details p{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.box{
+    /* margin-top: 40px; */
+    margin-left: 40px;
+    height: auto;
+    width: 300px;
+    border: 1px solid grey;
+    border-radius: 6px;
+    border-top-color: #1c9aee;
+}
+header{
+    height: 100vh;
+    padding: 100px 0 0 0;
+}

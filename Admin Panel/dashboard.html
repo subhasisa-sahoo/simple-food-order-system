@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        a{
+            text-decoration: none;
+        }
+        nav{
+            background-color: rgb(231, 61, 61);
+            color: white;
+            height: 60px;
+        }
+        h1{
+            font-size: 40px;
+            padding: 7px 25px;
+        }
+        .box1,.box2{
+            height: 120px;
+            width: 250px;
+            margin: 20px;
+            text-align: center;
+
+        }
+        .container{
+            display: flex;
+            margin: 0 27%;
+        }
+        .box1{
+            background-color: greenyellow;
+        }
+        .box2{
+            background-color: rgb(40, 233, 72);
+        }
+        .box-head{
+            padding: 35px;
+        }
+        .box-line{
+            background-color: #bdb9b9b4;
+            padding: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <h1>ADMIN PANEL</h1>
+    </nav>
+    <div class="container">
+        <div class="box1">
+            <div class="box-head">
+                <h3>Order</h3>
+            </div>
+            <div class="box-line">
+                <p><a href="adminorder.php">More info →</a></p>
+            </div>
+        </div>
+        
+        <div class="box2">
+            <div class="box-head">
+                <h3>Contact</h3>
+            </div>
+            <div class="box-line">
+                <p><a href="admincontact.php">More info →</a></p>
+            </div>
+        </div>
+    </div>
+    <div class="box2">
+        <div class="box-head">
+            <h3>Reservation</h3>
+        </div>
+        <div class="box-line">
+            <p><a href="reservation.php">More info →</a></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>

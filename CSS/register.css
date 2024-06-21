@@ -1,0 +1,55 @@
+.register h1{
+    font-size: 28px;
+    text-align: center;
+}
+form{
+    background-color: var(--primarycolor);
+    box-shadow: var(--shadowcolor);
+    border-radius: 10px;
+    width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+}
+input,
+select{
+    width: 95%;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--secondarycolor);
+    padding: 10px;
+    margin: 5px 0 0 0;
+}
+select{
+    width: 99%;
+    font-size: 16px;
+}
+input[type="submit"]{
+    background-color: var(--maincolor);
+    color: var(--primarycolor);
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+input[type="submit"]:hover{
+    background-color: var(--hovercolor);
+}
+input[type="file"]{
+    padding: 10px;
+}
+span{
+    color: var(--maincolor);
+    font-size: 13px;
+}
+span i{
+    color: green;
+}
+@media only screen and (max-width: 467px){
+    .register h1{
+        font-size: 25px;
+        margin-bottom: 10px;
+    }
+    form{
+        width: auto;
+        margin: 0px auto;
+    }
+}

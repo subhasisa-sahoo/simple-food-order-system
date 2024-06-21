@@ -1,0 +1,56 @@
+body{
+    background-color:var(--secondarycolor);
+}
+.login h1{
+    color: var(--maincolor);
+    text-align: center;
+    padding: 20px;
+}
+form{
+    background-color: var(--primarycolor);
+    border: none;
+    border-radius: 10px;
+    width: 400px;
+    margin: 12% auto;
+    padding: 25px;
+    box-shadow: var(--shadowcolor);
+}
+input[type="email"],
+input[type="password"] {
+    width: 94%;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: var(--secondarycolor);
+    border: none;
+    margin: 5px 0 2px 0;
+}
+input[type="submit"] {
+    width: 99%;
+    border-radius: 5px;
+    background-color: var(--maincolor);
+    margin: 25px 0 10px 0;
+    padding: 10px;
+    border: none;
+    color: var(--primarycolor);
+    font-size: 15px;
+    cursor: pointer;
+}
+input[type="submit"]:hover{
+    background-color:  var(--hovercolor);
+}
+.span_signup{
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+.span_signup a{
+    text-decoration: none;
+    margin-top: 15px;
+    text-align: center;
+}
+@media only screen and (max-width: 467px){
+    form{
+        width: auto;
+        margin: 0px auto;
+    }
+}

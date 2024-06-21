@@ -1,0 +1,88 @@
+body{
+    background-color: var(--secondarycolor);
+}
+h2{
+    font-family: "Sofia", sans-serif;
+}
+html{
+    font-family: Arial, sans-serif;
+}
+.orderin{
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    /* box-shadow: 0 0 10px red; */
+    background-color: var(--primarycolor);
+    height: 70%;
+    width: 50%;
+    margin-left: 22%;
+    padding: 3% 1%;
+    border-radius: 4px;
+}
+.inputBox{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+textarea{
+    margin-top: 6px;
+}
+textarea, input, select{
+    background-color: var(--secondarycolor);
+    border: .1rem solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+}
+textarea{
+    padding: 2px;
+}
+label{
+    font-size: 15px;
+}
+input, select{
+   height: 34px;
+   width: 47vw;
+   margin: 5px 0 10px;
+   font-size: 14px;
+   padding-left: 10px;
+}
+.input select{
+    width: 48vw;
+    height: 40px;
+}
+input:focus{
+    font-size: 16px;
+}
+.smbtn input{
+    background-color: var(--maincolor);
+    color: var(--primarycolor);
+    height: 40px;
+    width: 180px;
+    font-size: 19px;
+    margin: 20px 38%;
+    cursor: pointer;
+}
+.smbtn input:hover{
+    background-color: var(--darkcolor);
+}
+@media screen and (min-width: 320px) and (max-width: 767px){
+   .orderin{
+    width: 91%;
+    margin: 5px 12px;
+   }
+   input, select{
+    width: 80vw;
+    margin: 0px 0 10px;
+    font-size: 14px;
+   }
+   .inputta{
+    margin: 4px 19px;
+
+   }
+   textarea{
+    height: 50px;
+    width: 98%;
+   }
+   
+
+
+
+}
+    
